@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let div1 = document.createElement("div");
+      div1.style.border = "2px solid black";
+      div1.style.height = "300px";
+      div1.style.width = "300px";
+      div1.style.fontSize = "40px";
+      div1.style.color = "white";
+      div1.style.backgroundColor = "black";
+      div1.style.textAlign = "center";
+      div1.style.alignContent = "center";
+      div1.style.borderRadius = "100%";
+      div1.style.backgroundImage = "url('./op.jpg')";
+
+      setInterval(() => {
+        data = new Date();
+        div1.innerText = data.toLocaleTimeString();
+        console.log(data);
+      }, 1000);
+      document.body.appendChild(div1);
+    </script>
+  </body>
+</html>
